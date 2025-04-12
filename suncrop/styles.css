@@ -1,0 +1,296 @@
+/* General Reset */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150%;
+    min-height: 100vh;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+    margin-bottom: 50px;
+}
+
+/* .logo {
+    height: 100px;
+} */
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    max-width: 1800px;
+}
+
+/* Left Section: Login */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-right: 40px;
+}
+.login-text{
+    font-size: 26px;
+    font-weight: 700 !important; /* Change to 700 (Bold) as per PSD */
+    margin-bottom: 20px;
+    color: #004346;
+    
+}
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    margin-top: -15px;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+    font-family:  Helvetica;
+
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Continue Button (Yellow) */
+.continue-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #ffcd05;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004346;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4); /* Multiply blend mode effect */
+
+}
+
+/* Hover and Focus States for Yellow Button */
+.continue-btn:hover,
+.continue-btn:focus {
+    background-color: #e6b800; /* Darker yellow */
+    box-shadow: 0 4px 10px rgba(255, 205, 5, 0.5);
+    transform: scale(1.05);
+}
+
+
+
+
+.forgot-password {
+    font-size: 16px;
+    color: #004346;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 25px;
+    font-family: Helvetica, Arial, sans-serif; /* Helvetica with fallbacks */
+    font-weight: 600; /* Normal/Regular weight */
+}
+
+/* Help Section */
+.help-section {
+    background: #faf8f9;  /* Lighter grey */
+    padding: 35px;
+    margin: 30px -35px -35px -35px; /* Adjust to match new .login-card padding */
+    text-align: center;
+    font-family:  Helvetica;
+
+  }
+  
+  .help-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width */
+    position: relative;
+    font-family:  Helvetica;
+
+}
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background: #004346;
+}
+  
+  .help-text p {
+    font-size: 16px;
+    height: 13px;
+    font-weight: bold;
+    color: #004346;
+  }
+  
+/* FM Services Button (Outlined) */
+.fm-services-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #004346;
+    border-radius: 25px;  
+    font-size: 18px;
+    font-weight: 600;
+    color: #004346;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover and Focus States for Outlined Button */
+.fm-services-btn:hover,
+.fm-services-btn:focus {
+    background-color: #004346;
+    color: #ffffff;
+    border-color: #004346;
+    box-shadow: 0 4px 10px rgba(0, 67, 70, 0.4);
+    transform: scale(1.05);
+}
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between text and logo */
+    margin-top: 35px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.kbs-logo {
+    width: 106px;  /* Set container width */
+    height: 30px;  /* Set container height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #004346;
+    font-family: Helvetica;
+    text-align: left;
+}
+
+.kbs-logo img {
+    width: auto;  
+    height: 40px; /* Adjust height */
+    object-fit: contain;
+}
+
+.kbs-text {
+    color: #003399;
+    font-size: 11.4px;
+    font-family: Helvetica;
+    text-align: left;
+    margin-right: 42px;
+}
+
+/* Right Section: Standards */
+.standards-section {
+    width: 1000px; /* Set fixed width */
+    height: 500px;
+    /* background-color: #f5f5f5; */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto; /* Center the section */
+}
+
+
+.head-text {
+    font-size: 26px;
+    color: #004346;
+    text-align: center;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+}
+
+.subtext {
+    text-align: center;
+    font-size: 22px;
+    color: #004346;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: stretch; /* Ensures both columns are the same height */
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute items evenly */
+    width: 48%;
+    gap: 12px; /* Adds space between items */
+
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Ensures equal height distribution */
+}
+
+
+.item img {
+    width: 49px;
+    height: 49px;
+    margin-right: 15px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(50%) saturate(2000%) hue-rotate(160deg); 
+}
+
+.item p {
+    font-size: 14px;
+    color: #004346;
+    word-spacing: -0.7px; 
+    line-height: 20px;
+}
+
+.separator {
+    width: 2px;
+    background-color: #C9C5BF;
+    
+}
